@@ -1,11 +1,12 @@
 const data = ["Milano", "Bologna", "Palermo", "Genova", "Torino"];
 
 
-const Cities = () => {
+const Cities = (props) => {
 
     const cityChange = (event) => {
         const selected = event.target.value;
-        console.log(selected);
+        // console.log(selected);
+        props.notify(selected);
         
     }
 
